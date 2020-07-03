@@ -4341,7 +4341,7 @@ public class CalciteQueryTest extends BaseCalciteQueryTest
                               new CountAggregatorFactory("a6"),
                               not(selector("dim2", null, null))
                           ),
-                          new DoubleSumAggregatorFactory("a7:sum","d1"),
+                          new DoubleSumAggregatorFactory("a7:sum", "d1"),
                           new CountAggregatorFactory("a7:count")
                       )
                       : aggregators(
@@ -4404,10 +4404,10 @@ public class CalciteQueryTest extends BaseCalciteQueryTest
         ),
         NullHandling.replaceWithDefault() ?
         ImmutableList.of(
-            new Object[]{6L, 6L, 5L, 1L, 6L, 8L, 3L, 6L, ((1+1.7)/6)}
+            new Object[]{6L, 6L, 5L, 1L, 6L, 8L, 3L, 6L, ((1 + 1.7) / 6)}
         ) :
         ImmutableList.of(
-            new Object[]{6L, 6L, 6L, 1L, 6L, 8L, 4L, 3L, ((1+1.7)/3)}
+            new Object[]{6L, 6L, 6L, 1L, 6L, 8L, 4L, 3L, ((1 + 1.7) / 3)}
         )
     );
   }
